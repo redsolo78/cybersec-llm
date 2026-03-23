@@ -1,7 +1,7 @@
 # CybersecLLM Dataset Pipeline
 ### Guida completa agli script e alla sequenza di utilizzo
 *Versione corrente: Marzo 2026*
-**Ringrazio l'AI che mi ha aiutato :-D **
+*Ringrazio l'AI che mi ha aiutato :-D*
 ---
 
 ## 1. Panoramica della Pipeline
