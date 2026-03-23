@@ -13,9 +13,9 @@ La pipeline si divide in **8 fasi**. Usare gli script **sempre nell'ordine indic
 | 1 — Scraping | Trova repo GitHub offensivi | `universal_fresh_hunter_v4.1.py` | `targets_2025_2026_super.json` |
 | 2 — Estrazione | Estrae codice dai repo clonati | `post_process_github_dataset.py` | `extracted_code/` |
 | 3 — Candidati | Calcola score, tier, segnali | `extract_to_candidates.py` | `file_candidates_v2.jsonl` |
-| 4 — Conversione | Crea esempi training con metadata | **`convert_candidates_v6_H200.py` | `train_examples.jsonl` |
-| 5 — Filtro Gold | Dedup, qualità, tier, lingua | **`h200_gold_filter_v520.py` | `train_gold.jsonl` |
-| 6 — Merge | Unisce più dataset in formato unico | **`dataset_merger_v2.py` | `merged_gold_final.jsonl` |
+| 4 — Conversione | Crea esempi training con metadata | `convert_candidates_v6_H200.py` | `train_examples.jsonl` |
+| 5 — Filtro Gold | Dedup, qualità, tier, lingua | `h200_gold_filter_v520.py` | `train_gold.jsonl` |
+| 6 — Merge | Unisce più dataset in formato unico | `dataset_merger_v2.py` | `merged_gold_final.jsonl` |
 | 7 — Benchmark | Analizza qualità dataset JSONL | `dataset_benchmark_v3.py` | report a schermo |
 | 8 — Eval HF | Valuta dataset da HuggingFace | `hf_eval.py` | score 0-100 |
 
